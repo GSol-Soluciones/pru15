@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="document_ext_crm_lead_form_inherit" model="ir.ui.view">
+            <field name="name">document_ext_crm_lead_form</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button name="action_open_crm_documents" class="oe_stat_button"
+                            icon="fa-file-text-o" type="object">
+                        <field name="document_count" widget="statinfo" string="Documents"/>
+                    </button>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

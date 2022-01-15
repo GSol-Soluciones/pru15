@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="inherit_document_ext_view_tree" model="ir.ui.view">
+            <field name="name">inherit_document_ext_view_tree</field>
+            <field name="model">documents.document</field>
+            <field name="inherit_id" ref="documents.documents_view_list"/>
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="crm_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="inherit_document_ext_view_form" model="ir.ui.view">
+            <field name="name">inherit_document_ext_view_form</field>
+            <field name="model">documents.document</field>
+            <field name="inherit_id" ref="documents.document_view_form"/>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                    <field name="crm_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="crm_inherit_document_ext_view_kanban" model="ir.ui.view">
+            <field name="name">crm_inherit_document_ext_view_kanban</field>
+            <field name="model">documents.document</field>
+            <field name="inherit_id" ref="documents.document_view_kanban"/>
+            <field name="arch" type="xml">
+                <field name="owner_id" position="before">
+                    <field name="crm_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="inherit_document_ext_search_inherit" model="ir.ui.view">
+            <field name="name">inherit_document_ext_search_inherit</field>
+            <field name="model">documents.document</field>
+            <field name="inherit_id" ref="documents.document_view_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search/field[@name='owner_id']" position="after">
+                    <field name="crm_id"/>
+                </xpath>
+            </field>
+        </record>
+
+<!--        <template id="assets_backend" name="documents crm assets backend" inherit_id="web.assets_backend">-->
+<!--            <xpath expr="." position="inside">-->
+<!--                <script type="text/javascript" src="/document_crm_ext/static/src/js/document_crm.js"/>-->
+<!--            </xpath>-->
+<!--        </template>-->
+    </data>
+</odoo>
