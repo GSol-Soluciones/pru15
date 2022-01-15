@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* document_crm_ext
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e-20211113\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-16 13:23+0000\n"
+"PO-Revision-Date: 2021-11-16 14:25+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: document_crm_ext
+#: model:ir.actions.server,name:document_crm_ext.process_check_document_exist_ir_actions_server
+#: model:ir.cron,cron_name:document_crm_ext.process_check_document_exist
+#: model:ir.cron,name:document_crm_ext.process_check_document_exist
+msgid "CRM:Check Document Exist"
+msgstr "CRM: Chequear Documento Existente"
+
+#. module: document_crm_ext
+#: model:ir.model.fields,field_description:document_crm_ext.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:document_crm_ext.field_documents_document__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: document_crm_ext
+#: model:ir.model,name:document_crm_ext.model_documents_document
+msgid "Document"
+msgstr "Documento"
+
+#. module: document_crm_ext
+#: code:addons/document_crm_ext/models/models.py:0
+#: model:ir.model.fields,field_description:document_crm_ext.field_crm_lead__document_count
+#: model_terms:ir.ui.view,arch_db:document_crm_ext.document_ext_crm_lead_form_inherit
+#, python-format
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: document_crm_ext
+#: model:ir.model.fields,field_description:document_crm_ext.field_crm_lead__id
+#: model:ir.model.fields,field_description:document_crm_ext.field_documents_document__id
+msgid "ID"
+msgstr ""
+
+#. module: document_crm_ext
+#: model:ir.model.fields,field_description:document_crm_ext.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:document_crm_ext.field_documents_document____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: document_crm_ext
+#: model:ir.model,name:document_crm_ext.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Lead/Oportunidad"
+
+#. module: document_crm_ext
+#: model:ir.model.fields,field_description:document_crm_ext.field_documents_document__crm_id
+msgid "Opportunity"
+msgstr "Oportunidad"
