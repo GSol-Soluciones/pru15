@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+
+         <record id="crm_customization_gsol_form_view" model="ir.ui.view">
+            <field name="name">CRM Extended</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form[1]/sheet[1]/group[1]/group[@name='opportunity_partner']/field[@name='partner_id']"
+                       position="after">
+                    <field name="contact_id" domain="[('parent_id', '=', partner_id), ('type', '=', 'contact')]"/>
+                </xpath>
+            </field>
+        </record>
+
+
+  </data>
+</odoo>
