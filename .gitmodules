@@ -1,4 +1,0 @@
-[submodule "OCA/web"]
-	path = OCA/web
-	url = git@github.com:OCA/web.git
-	branch = 15.0
