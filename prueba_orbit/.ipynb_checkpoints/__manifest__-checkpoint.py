@@ -21,7 +21,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
-
+    'license': "OPL-1",
     
     # always loaded
     'data': [
